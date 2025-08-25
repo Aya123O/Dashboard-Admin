@@ -58,7 +58,6 @@ const LeadsTable = () => {
     { value: 'closed', label: 'Mark as Closed', color: 'text-green-600', icon: <div className="w-2 h-2 rounded-full bg-green-600 mr-2"></div> }
   ];
   
-  // Close action menu when clicking outside
   useEffect(() => {
     const handleClickOutside = (event) => {
       if (actionMenuRef.current && !actionMenuRef.current.contains(event.target)) {
